@@ -5,7 +5,6 @@ Drug discovery pipeline — Python & RDKit.
 Built by a computational chemistry student tired of how slow drug discovery is.
 This pipeline does in minutes what researchers do in weeks.
 
----
 
 ### What it does
 
@@ -15,7 +14,6 @@ and ranks them by a combined efficacy + pharmacokinetics score.
 
 Output : a ranked list of drug candidates with 2D structure visualization.
 
----
 
 ### Demo — BCL2 / leukemia
 
@@ -25,7 +23,6 @@ Inhibiting it restores their ability to die — the mechanism behind Venetoclax.
 Top candidate identified : **CHEMBL150332**
 IC50 : 13 nM — DiscovAI score : 77.8 / 100
 
----
 
 ### Pipeline
 
@@ -42,6 +39,5 @@ IC50 : 13 nM — DiscovAI score : 77.8 / 100
 
 Python · RDKit · ChEMBL API · Pandas · NumPy · Jupyter
 
----
 
 *M1 Numerical Chemistry and AI - Paris cité*
