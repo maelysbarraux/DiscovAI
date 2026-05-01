@@ -1,29 +1,31 @@
-# DiscovAI 🔬
+# DiscovAI
 
-AI-powered drug discovery pipeline built in Python.
+Drug discovery pipeline — Python & RDKit.
+
+Automates early-stage molecular screening against a biological target.
+Built as part of a computational chemistry research project.
 
 ## What it does
 
-DiscovAI automates the early stages of drug discovery:
-- Fetches active molecules from ChEMBL (2M+ compounds database)
-- Calculates physicochemical properties using RDKit
-- Filters candidates with Lipinski Rule of Five
-- Scores molecules on ADMET profile (Absorption, Distribution, Metabolism, Excretion, Toxicity)
-- Ranks candidates with a combined DiscovAI score (60% efficacy + 40% ADMET)
-- Visualizes top candidates in 2D
+Connects to ChEMBL, the world's largest open bioactivity database,
+and runs a full screening pipeline on any target of interest.
 
-## Demo — BCL2 target (cancer)
+- Molecular property calculation
+- Lipinski drug-likeness filter
+- ADMET scoring — absorption, distribution, metabolism, excretion, toxicity
+- Global candidate ranking combining efficacy and pharmacokinetic profile
+- 2D structure visualization of top candidates
 
-BCL2 is an anti-apoptotic protein overexpressed in leukemia and lymphoma.
-DiscovAI identified CHEMBL150332 as top candidate with IC50 = 13 nM and DiscovAI score = 77.8/100.
+## Demo
 
-## Tech stack
+Target : BCL2 — anti-apoptotic protein involved in leukemia and lymphoma  
+Top candidate : CHEMBL150332  
+IC50 : 13 nM  
+DiscovAI score : 77.8/100  
 
-- Python 3
-- RDKit — molecular informatics
-- ChEMBL API — pharmaceutical database
-- Pandas, NumPy — data processing
-- Jupyter Notebook
+## Stack
+
+Python — RDKit — ChEMBL API — Pandas — NumPy
 
 ## Usage
 
@@ -32,7 +34,7 @@ conda install -c conda-forge rdkit
 pip install requests pandas numpy
 ```
 
-Then open `discovai_pipeline.ipynb` and run all cells.
+Open `discovai_pipeline.ipynb` and run.
 
 ## Author
 
